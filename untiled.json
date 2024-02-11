@@ -1,0 +1,73 @@
+[
+  {
+    "id": "9589",
+    "type": "TitleField",
+    "extraAttributes": { "title": "Heading" }
+  },
+  {
+    "id": "1546",
+    "type": "SubTitleField",
+    "extraAttributes": { "subtitle": "Sub heading" }
+  },
+  {
+    "id": "4784",
+    "type": "ParagraphField",
+    "extraAttributes": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit optio ipsam dolor architecto dolorem beatae labore. Eius, molestias! Accusantium ipsa ipsum omnis animi tenetur dolorum! At omnis cupiditate ullam maiores veritatis quae nam itaque ex nihil tempora autem voluptatum magnam dolore, est eum? Tenetur cupiditate iste rerum mollitia incidunt fugiat optio laborum excepturi obcaecati vitae quis, iusto quod ea maiores corrupti consectetur dignissimos adipisci ad aspernatur atque. Illo tempora aliquam laboriosam doloribus animi debitis. Odio sint consequatur, corrupti magni itaque suscipit deserunt doloremque unde ea velit ipsa provident amet.\n"
+    }
+  },
+  { "id": "163", "type": "SeparatorField" },
+  {
+    "id": "5962",
+    "type": "TextField",
+    "extraAttributes": {
+      "label": "Text Field",
+      "helperText": "Helper Text",
+      "required": false,
+      "placeholder": "Value here..."
+    }
+  },
+  { "id": "181", "type": "SeparatorField" },
+  {
+    "id": "259",
+    "type": "TextField",
+    "extraAttributes": {
+      "label": "Text Field",
+      "helperText": "Helper Text",
+      "required": false,
+      "placeholder": "Value here..."
+    }
+  },
+  {
+    "id": "1663",
+    "type": "NumberField",
+    "extraAttributes": {
+      "label": "Number Field",
+      "helperText": "Helper Text",
+      "required": false,
+      "placeholder": "0"
+    }
+  },
+  {
+    "id": "2854",
+    "type": "TextareaField",
+    "extraAttributes": {
+      "label": "Textarea Field",
+      "helperText": "Helper Text",
+      "placeholder": "Value here...",
+      "required": false,
+      "rows": 3
+    }
+  },
+  {
+    "id": "4146",
+    "type": "SelectField",
+    "extraAttributes": {
+      "label": "Options",
+      "helperText": "",
+      "placeholder": "Select Option",
+      "required": true,
+      "options": ["Option 1", "Option 2", "Option 3", "Option 4"]
+    }
+  }
+]
