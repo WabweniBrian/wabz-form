@@ -32,7 +32,7 @@ import { Calendar } from "../ui/calendar";
 const type: ElementsType = "DateField";
 
 const extraAttributes = {
-  label: "Text Field",
+  label: "Date Field",
   helperText: "Helper Text",
   required: false,
 };
