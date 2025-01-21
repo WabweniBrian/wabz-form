@@ -21,11 +21,17 @@ const FormElementsSidebar = () => {
           Form Elemets
         </p>
         <SidebarButtonElement formElement={formElements.TextField} />
+        <SidebarButtonElement formElement={formElements.EmailField} />
+        <SidebarButtonElement formElement={formElements.PasswordField} />
         <SidebarButtonElement formElement={formElements.NumberField} />
         <SidebarButtonElement formElement={formElements.TextareaField} />
         <SidebarButtonElement formElement={formElements.DateField} />
         <SidebarButtonElement formElement={formElements.SelectField} />
         <SidebarButtonElement formElement={formElements.CheckboxField} />
+        <SidebarButtonElement formElement={formElements.MultiCheck} />
+        <SidebarButtonElement formElement={formElements.RadioGroup} />
+        <SidebarButtonElement formElement={formElements.RatingField} />
+        <SidebarButtonElement formElement={formElements.ToggleField} />
       </div>
     </div>
   );
