@@ -81,6 +81,7 @@ const Designer = () => {
         }
 
         addElement(indexForNewElement, newElement);
+        setSelectedElement(newElement);
         return;
       }
 

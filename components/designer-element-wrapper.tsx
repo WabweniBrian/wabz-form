@@ -68,14 +68,15 @@ const DesignerElementWrapper = ({
         <>
           <div className="absolute right-0 h-full z-10">
             <Button
-              variant="outline"
-              className="flex-center-center h-full rounded-md rounded-l-none bg-red-500"
+              className="absolute -top-1 -right-1 z-10 h-6 w-6 p-0"
+              variant="destructive"
               onClick={(e) => {
                 e.stopPropagation();
                 removeElement(element.id);
+                setSelectedElement(null);
               }}
             >
-              <BiSolidTrash className="h-6 w-6" />
+              <BiSolidTrash className="h-4 w-4" />
             </Button>
           </div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse z-10">
