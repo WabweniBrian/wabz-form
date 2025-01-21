@@ -94,7 +94,7 @@ const FormDetails = async ({
         />
       </div>
 
-      <div className="pt-10 overflow-auto">
+      <div className="pt-10">
         <SubmissionsTable id={form.id} />
       </div>
     </div>
@@ -163,41 +163,39 @@ const SubmissionsTable = async ({ id }: { id: number }) => {
         <h1 className="text-2xl font-bold">Submissions</h1>
         <ExportButton columns={columns} rows={rows} />
       </div>
-      <div className="w-full overflow-x-auto">
-        <div className="rounded-md border">
-          <Table className="w-full">
-            <TableHeader>
-              <TableRow>
-                {columns.map((column) => (
-                  <TableHead key={column.id} className="uppercase">
-                    {column.label}
-                  </TableHead>
-                ))}
-                <TableHead className="text-muted-foreground text-right uppercase">
-                  Submitted at
+      <div className="rounded-md grid grid-cols-1 border overflow-auto w-full">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              {columns.map((column) => (
+                <TableHead key={column.id} className="uppercase">
+                  {column.label}
                 </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {rows.map((row, index) => (
-                <TableRow key={index}>
-                  {columns.map((column) => (
-                    <RowCell
-                      key={column.id}
-                      type={column.type}
-                      value={row[column.id]}
-                    />
-                  ))}
-                  <TableCell className="text-muted-foreground text-right">
-                    {formatDistance(row.submittedAt, new Date(), {
-                      addSuffix: true,
-                    })}
-                  </TableCell>
-                </TableRow>
               ))}
-            </TableBody>
-          </Table>
-        </div>
+              <TableHead className="text-muted-foreground text-right uppercase">
+                Submitted at
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {rows.map((row, index) => (
+              <TableRow key={index}>
+                {columns.map((column) => (
+                  <RowCell
+                    key={column.id}
+                    type={column.type}
+                    value={row[column.id]}
+                  />
+                ))}
+                <TableCell className="text-muted-foreground text-right">
+                  {formatDistance(row.submittedAt, new Date(), {
+                    addSuffix: true,
+                  })}
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
       </div>
     </div>
   );

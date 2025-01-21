@@ -127,7 +127,7 @@ const ExportModal = ({
                   />
                   <label
                     htmlFor={column.id}
-                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    className="text-sm cursor-pointer font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                   >
                     {column.label}
                   </label>
